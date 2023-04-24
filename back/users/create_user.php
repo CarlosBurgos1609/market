@@ -6,7 +6,9 @@
     $firtsName = $_POST['f_name'];
     $lastaName = $_POST['l_name'];
     $email = $_POST['email'];
-    $password = $_POST['passsword'];
+    //para una contraseña para encriptar
+    // $password = md5($_POST['password']);
+    $password = $_POST['password'];
     //colocar los nombres de los campos de la base de datos
     $sql = "INSERT INTO users (first_name, last_name, email, password) VALUES ('$firtsName','$lastaName','$email', '$password')";
     $test = "INSERT INTO `users` (`id`, `first_name`, `last_name`, `email`, `password`, `created_at`, `update_at`, `delete_at`) VALUES (NULL, '', '', '', '', current_timestamp(), NULL, NULL)";
