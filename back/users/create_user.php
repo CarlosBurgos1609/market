@@ -16,10 +16,17 @@
     //$conn->query($sql);
     if ($conn->query($sql) === true) {
         //se creo satisfactoriamente
-        echo "User has been created successfully";
+        // echo "User has been created successfully";
+        echo "<script>alert('User has been created successfully')</script>";
+        // header("Location: http://localhost/market/front/login.html");
+        header("Refresh:0; url=http://localhost/market/front/login.html");
     }
     else{
         //mostrar el error
-        echo"Error: ".$conn->error."<br>".$sql;
+        // echo"Error: ".$conn->error."<br>".$sql;
+        echo" <script>alert('Email already exist')</script";
+        header ("refresh:0; url=http://localhost/market/front/creaete_user.html");
     }
+    // if(exists){line 21}
+    // else{}
 ?>
