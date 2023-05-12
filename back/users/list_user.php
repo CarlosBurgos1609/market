@@ -1,4 +1,5 @@
 <?php include('../config/cnx_db.php') ?>
+<!-- http://localhost/market/back/users/list_user.php -->
 <!DOCTYPE html>
 <html lang="es">
 
@@ -7,6 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lIST_USER</title>
+    <link rel="shortcut icon" href="../../front/img/logo1.png" type="x-icon" >
+    <link href="stylesheet" href="../../front/estile/stile.css">
 </head>
 
 <body>
@@ -30,17 +33,12 @@
                      <a href='edit_user.php?id=" . $row['id'] . "'>
                     <img src='../../front/icons/update.png'width='15' alt='logo' ></a> 
 
-                     <a href='edit_user.php?id=" . $row['id'] . "'>
+                     <a href='delete_user.php?id=" . $row['id'] . "'>
                     <img src='../../front/icons/delete.png' width='15' alt='logo'></a> 
                     </td>"
                 ;
             }
         }
-
-
-
-
-
         ?>
     </table>
 
