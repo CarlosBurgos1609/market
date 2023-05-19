@@ -30,7 +30,7 @@ $sql = "SELECT * From users WHERE id='$userId'";
 <body>
     <center>
         <form namme="EditUserForm" action="http://localhost/market/back/users/update_user.php" method="POST">
-            <input type="hidden" name="uId" value="<?php echo $userId; ?>" disabled="true">
+            <input type="hidden" name="uId" value="<?php echo $userId ?>">
             <label>Firstname:</label><input name="f_name" placeholder="Tom" type="text" value="<?php echo $f_name; ?>" required><br><br>
             <label>Lastname:</label><input name="l_name" type="text" placeholder="Mclister" value="<?php echo $l_name; ?>" required><br><br>
             <label>Email:</label><input name="email" type="email" placeholder="Tom@gmailcom" value="<?php echo $email; ?>" required><br><br>
